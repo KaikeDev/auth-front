@@ -1,10 +1,12 @@
+import {HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
-import { RouterLink, RouterOutlet } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink],
+  imports: [RouterOutlet, RouterLink, ReactiveFormsModule, HttpClientModule, RouterModule],
   template: `
 
 
